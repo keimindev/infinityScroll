@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 import { history } from "./redux/configStore";
 import { useDispatch, useSelector } from "react-redux";
 import { actionCreators as postActions } from "./redux/modules/post";
-import InfinityScroll from "./InfinityScroll";
 import InfiniteScroll from "react-infinite-scroll-component";
 import axios from "axios";
-import Page from "./Page";
-import { Route } from "react-router-dom";
 
 const Main = () => {
   const dispatch = useDispatch();
